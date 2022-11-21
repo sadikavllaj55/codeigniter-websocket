@@ -1,0 +1,87 @@
+.wrapper {
+    position: relative;
+}
+
+.wrapper, body, html {
+    min-height: 100%;
+}
+
+body {
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #866ec7;
+    color: #fff;
+    position: relative;
+    transition: margin-left .2s ease;
+}
+
+#sidebar.sidebar-closed {
+    margin-left: -250px;
+}
+
+#sidebar.bg-dark a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+.main-header {
+    border-bottom: 1px solid #dee2e6;
+    z-index: 1034;
+}
+
+.brand-link {
+    display: block;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding: 0.8125rem 0.5rem;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#sidebar ul li a {
+    position: relative;
+    padding: 10px 0;
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#sidebar ul li ul li a {
+    padding-left: 1em;
+}
+
+.menu-arrow {
+    position: absolute;
+    right: 0;
+    top: 14px;
+}
+
+a[aria-expanded="true"] .menu-arrow {
+    transform: rotate(-90deg);
+}
+
+.online {
+    color: #86c541;
+}
+
+.offline {
+    color: #e47297;
+}
