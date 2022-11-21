@@ -1,6 +1,6 @@
-# CodeIgniter 4 Task
+## CodeIgniter 4 Task
 
-## Setup
+### Setup
 
 Copy `env` to `.env` and tailor for your app, specifically the baseURL
 and any database settings.
@@ -11,22 +11,26 @@ Run ```composer install``` on the terminal to install the composer dependencies.
 
 For development purposes a dev email server can serve to debug emails. Please see about installing [Mailcatcher](https://mailcatcher.me/).
 
+### Websockets
+
 To start the chat websocket server:
 ```shell
 cd <PROJECT>/public
 php index.php chat
 ```
 
+Do not close that window. Import the database  file `database.sql` into your app database.
+The accounts from the dump should have their passwords set to `password`.
+
+### Uploads
+
 For images to show correctly the folder `<PROJECT>/writable/uploads` should have a symlink/shortcut under the public folder.
 
 ```shell
 ln -s $(pwd)/writable/uploads $(pwd)/public
 ```
-
-Don not close that window. Import the database  file `database.sql` into your app database.
-The accounts from the dump should have their passwords set to `password`.
  
-## Server Requirements
+### Server Requirements
 
 PHP version 7.3 or higher is required, with the following extensions installed:
 

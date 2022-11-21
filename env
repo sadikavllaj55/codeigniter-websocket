@@ -20,8 +20,13 @@
 # APP
 #--------------------------------------------------------------------
 
-# app.baseURL = 'igniter.web'
 # app.forceGlobalSecureRequests = false
+
+app.baseURL=igniter.web:8080
+app.websocketSecure=false
+app.websocketHost=igniter.web
+app.websocketPort=8888
+app.websocketUri=igniter.web:8888
 
 # app.sessionDriver = 'CodeIgniter\Session\Handlers\FileHandler'
 # app.sessionCookieName = 'ci_session'
